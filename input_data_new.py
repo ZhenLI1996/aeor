@@ -7,9 +7,10 @@ import requests
 import traceback
 import datetime
 
-print("input_data_new: importing NLTK")
-import nltk
-print("input_data_new: NLTK imported")
+print("no_nltk")
+#print("input_data_new: importing NLTK")
+#import nltk
+#print("input_data_new: NLTK imported")
 
 DIR_FLOB = '../../../corpora/FLoB_Frown_XML/FLoB_Frown_XML/FLOB_XML/FLOB'
 PATH_FLOB_A = DIR_FLOB + '/flob_a.xml'
@@ -45,39 +46,6 @@ def read_FLOB(dir=DIR_FLOB):
       d = __read_FLOB_file(dir + '/' + file)
       d_all.update(d)
   return d_all
-
-'''
-def __read_FLOB_file(path):
-  # print instruction
-  print("reading file: ", path)
-  # read raw text, change into lower case
-  with open(path, 'r', encoding='utf-8', errors='ignore') as fin:
-    text = fin.read().lower()
-  # find all raw words with regex
-  raw_tags = re.findall(r'<w (?:pos|POS)="(?:nn|NN)1\w*?">\w+?(?:er|ar|or)</w>', text)
-  raw_words = re.findall(r'(?:<w pos="nn1\w*?">)(\w+?(?:er|ar|or))(?:</w>)', text)
-  # lemmatize
-  #raw_toks = set((w.strip(string.punctuation) for w in raw_words))
-  #toks = set((lemmatizer.lemmatize(w) for w in raw_toks))
-  #return raw_toks, toks
-  tag_set = set(raw_tags)
-  word_set = set(raw_words)
-  return tag_set, word_set
-
-
-
-def read_FLOB(dir):
-  all_eaor_tags = set()
-  all_eaor_words = set()
-
-  for root, dirs, files in os.walk(dir):
-    for file in files:
-      cur_tags, cur_words = __read_FLOB_file(dir + '/' + file)
-      all_eaor_tags = all_eaor_tags | cur_tags
-      all_eaor_words = all_eaor_words | cur_words
-  return all_eaor_tags, all_eaor_words
-'''
-
 
 def __download_word(word):
   if os.path.exists('wordsapi/{}.txt'.format(word)):
