@@ -6,28 +6,20 @@ def __get_test_words():
   return j
 
 
-def __let_user_choose(word, results):
-  
-  temp = set()
-  for r in results:
-    if "partOfSpeech" in r:
-      temp.add(r["partOfSpeech"])
-  
-  temp = list(temp)
-  if len(temp) == 1:
-    return temp[0]
-  else:
-    print("word: ", word)
-    print("there are multiple pos, please choose one:")
-    for i, r in zip(range(0, len(temp)), temp):
-      print(i, ")\t\t", r)
-    i = int(input("choose: "))
-    while i >= len(results):
-      i = int(input("invalid input.\nchoose: "))
-    return temp[i]
+def __let_user_choose(word, temp):
 
-def get_pos(words=__get_test_words()):
+  print("word: ", word)
+  print("there are multiple pos, please choose one:")
+  for i, r in zip(range(0, len(temp)), temp):
+    print(i, ")\t\t", r)
+  i = int(input("choose: "))
+  while i >= len(temp):
+    i = int(input("invalid input.\nchoose: "))
+  return temp[i]
+
+def get_pos_test(words=__get_test_words()):
   d = {}
+  cnt = {"simple": 0, "complex": 0, "other": 0}
   for k, v in words.items():
     with open("./wordsapi/{}.txt".format(v), "r", encoding="utf-8") as fin:
       j = json.loads(fin.read())
@@ -37,10 +29,23 @@ def get_pos(words=__get_test_words()):
           r = results[0]
           if "partOfSpeech" in r:
             d[k] = {"word": v, "pos": r["partOfSpeech"]}
+            cnt["simple"] += 1
           else:
             d[k] = {"word": v, "pos": ""}
+            cnt["other"] += 1
         else:
-          d[k] = {"word": v, "pos": __let_user_choose(v, results=results)}
+          temp_set = set()
+          for r in results:
+            if "partOfSpeech" in r:
+              temp_set.add(r["partOfSpeech"])
+          if len(temp_set) == 1:
+            d[k] = {"word": v, "pos": list(temp_set)[0]}
+            cnt["simple"] += 1
+          else:
+            #d[k] = {"word": v, "pos": __let_user_choose(v, temp=temp_set)}
+            d[k] = {"word": v, "pos": ""}
+            cnt["complex"] += 1
       else:
         d[k] = {"word": v, "pos": ""}
-  return d
+        cnt["other"] += 1
+  return d, cnt
