@@ -8,10 +8,12 @@ DERIV_OUTPUT = "./divide3_output/deriv.txt"
 OTHER_OUTPUT = "./divide3_output/other.txt"
 NO_RES_OUTPUT = "./divide3_output/no_res.txt"
 
-def divide3(path=WORDSAPI_PATH):
+def divide3(wordlist):
   word_deriv = {}
   word_other = {}
   word_no_res = {}
+  
+  '''
   for root, dirs, files in os.walk(path):
     for file in files:
       word = re.findall(r'(.*?)\.txt', file)[0]
@@ -19,11 +21,11 @@ def divide3(path=WORDSAPI_PATH):
       with open(file_dir, 'r', encoding='utf-8') as fin:
         t = fin.read()
       j = json.loads(t)
-
+   
       print(word)
       deriv = []
       if 'results' not in j:
-        word_no_res[word] = {}
+        word_no_res[word] = ""
         continue
       
       for result in j['results']:
@@ -34,9 +36,35 @@ def divide3(path=WORDSAPI_PATH):
         word_other[word] = ''
       else:
         word_deriv[word] = deriv
+  '''
+  for word in wordlist:
+    #print(word)
+    path = WORDSAPI_PATH + '/' + word + '.txt'
+    if not os.path.exists(path):
+      print("not exists!")
+      continue
+    
+    with open(path, 'r', encoding='utf-8') as fin:
+      t = fin.read()
+    j = json.loads(t)
+   
+    deriv = []
+    if 'results' not in j:
+      print(word)
+      word_no_res[word] = ""
+      continue
+    
+    for result in j['results']:
+      if 'derivation' in result:
+        deriv.append(result['derivation'])
+    if len(deriv) == 0:
+      # no derivations
+      word_other[word] = ''
+    else:
+      word_deriv[word] = deriv
   with open(DERIV_OUTPUT, "w", encoding="utf-8") as fout_deriv,\
-       open(OTHER_OUTPUT, "w", encoding="utf-8") as fout_no_res,\
-       open(NO_RES_OUTPUT, "w", encoding="utf-8") as fout_other:
+       open(NO_RES_OUTPUT, "w", encoding="utf-8") as fout_no_res,\
+       open(OTHER_OUTPUT, "w", encoding="utf-8") as fout_other:
           fout_deriv.write(json.dumps(word_deriv))
           fout_no_res.write(json.dumps(word_no_res))
           fout_other.write(json.dumps(word_other))
@@ -92,3 +120,5 @@ def find_root(d_true):
     else:
       d[k] = __let_user_choose(roots)
   return d
+
+
