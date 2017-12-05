@@ -47,6 +47,8 @@ def read_FLOB(dir=DIR_FLOB):
       d_all.update(d)
   return d_all
 
+
+
 def __download_word(word):
   if os.path.exists('wordsapi/{}.txt'.format(word)):
     return "already exists"
@@ -64,7 +66,6 @@ def __download_word(word):
     return "download successfully"
   except Exception as e:
     return e
-
 
 def download(word_list):
   length = len(word_list)
