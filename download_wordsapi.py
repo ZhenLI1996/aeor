@@ -42,7 +42,7 @@ if __name__ == "__main__":
     diff = fin.read().split('\n')
   with open('diff_downloaded.txt', 'r', encoding='utf-8') as fin:
     diff_downloaded = fin.read().split('\n')
-  remain = list[set(diff) - set(diff_downloaded)]
+  remain = list(set(diff) - set(diff_downloaded))
   if len(remain) < 2450:
     download(remain)
   else:

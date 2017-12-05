@@ -1,0 +1,1 @@
+{"rhymes":{"all":"-ɑr"},"word":"boyar","syllables":{"count":2,"list":["bo","yar"]},"pronunciation":"boʊ'jɑr","frequency":1.73}
