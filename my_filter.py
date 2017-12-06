@@ -13,7 +13,7 @@ DERIV_OUTPUT = "./divide3_output/deriv.txt"
 OTHER_OUTPUT = "./divide3_output/other.txt"
 NO_RES_OUTPUT = "./divide3_output/no_res.txt"
 
-def divide3(wordlist):
+def divide3(wordlist, to_file=True):
   word_deriv = {}
   word_other = {}
   word_no_res = {}
@@ -69,12 +69,13 @@ def divide3(wordlist):
       word_other[word] = ''
     else:
       word_deriv[word] = deriv
-  with open(DERIV_OUTPUT, "w", encoding="utf-8") as fout_deriv,\
-       open(NO_RES_OUTPUT, "w", encoding="utf-8") as fout_no_res,\
-       open(OTHER_OUTPUT, "w", encoding="utf-8") as fout_other:
-          fout_deriv.write(json.dumps(word_deriv))
-          fout_no_res.write(json.dumps(word_no_res))
-          fout_other.write(json.dumps(word_other))
+  if to_file:
+    with open(DERIV_OUTPUT, "w", encoding="utf-8") as fout_deriv,\
+         open(NO_RES_OUTPUT, "w", encoding="utf-8") as fout_no_res,\
+         open(OTHER_OUTPUT, "w", encoding="utf-8") as fout_other:
+            fout_deriv.write(json.dumps(word_deriv))
+            fout_no_res.write(json.dumps(word_no_res))
+            fout_other.write(json.dumps(word_other))
   return word_deriv, word_other, word_no_res
 
 
