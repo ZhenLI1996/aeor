@@ -3,6 +3,11 @@ import json
 import traceback
 import re
 
+import sys
+import io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+
+
 WORDSAPI_PATH = "./wordsapi"
 DERIV_OUTPUT = "./divide3_output/deriv.txt"
 OTHER_OUTPUT = "./divide3_output/other.txt"
@@ -37,8 +42,10 @@ def divide3(wordlist):
       else:
         word_deriv[word] = deriv
   '''
-  for word in wordlist:
+  length = len(wordlist)
+  for word, i in zip(wordlist, range(1, length+1)):
     #print(word)
+    print("{}/{}".format(i, length))
     path = WORDSAPI_PATH + '/' + word + '.txt'
     if not os.path.exists(path):
       print("not exists!")
@@ -50,7 +57,7 @@ def divide3(wordlist):
    
     deriv = []
     if 'results' not in j:
-      print(word)
+      #print(word)
       word_no_res[word] = ""
       continue
     
