@@ -1,0 +1,1 @@
+{"roster": ["1727, from Dutch <span class=\"foreign\">rooster</span> \"table, list,\" originally \"gridiron,\" from Middle Dutch <span class=\"foreign\">roosten</span> \"to roast\" (see <a href=\"/word/roast\" class=\"crossreference\">roast</a> (v.)). So called from the grid of lines drawn on a paper to make a list."]}

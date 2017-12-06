@@ -23,6 +23,9 @@ def crawl_list(word_list):
     print("crawling", w, "...", end="", flush=True)
     if os.path.exists("etymonline/"+w+".txt"):
       print("already exists")
+      with open("etymonline/"+w+".txt", "r", encoding="utf-8") as fin:
+        j = json.loads(fin.read())
+      d.update(j)
       continue
     r = __crawl_single_word(w)
     d[w] = r
