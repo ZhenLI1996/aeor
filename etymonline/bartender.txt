@@ -1,0 +1,1 @@
+{"bartender": ["also <span class=\"foreign\">bar-tender</span>; 1836, American English, from <a href=\"/word/bar\" class=\"crossreference\">bar</a> (n.2) + agent noun of <a href=\"/word/tend\" class=\"crossreference\">tend</a> (v.2)."]}

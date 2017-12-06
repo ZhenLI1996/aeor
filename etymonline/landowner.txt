@@ -1,0 +1,1 @@
+{"landowner": ["also <span class=\"foreign\">land-owner</span>, 1733, from <a href=\"/word/land\" class=\"crossreference\">land</a> (n.) + <a href=\"/word/owner\" class=\"crossreference\">owner</a>."]}

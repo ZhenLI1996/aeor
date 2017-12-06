@@ -1,0 +1,1 @@
+{"hairdresser": ["also <span class=\"foreign\">hair-dresser</span>, 1770, from <a href=\"/word/hair\" class=\"crossreference\">hair</a> + <a href=\"/word/dresser\" class=\"crossreference\">dresser</a>. Related: <span class=\"foreign\">Hairdressing</span> (1771)."]}

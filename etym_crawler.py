@@ -17,8 +17,10 @@ def __crawl_single_word(word):
 
 def crawl_list(word_list):
   d = {}
-  for w in word_list:
-    print("crawling", w, "...", end="")
+  length = len(word_list)
+  for w, i in zip(word_list, range(length)):
+    print("{:>3d}/{:>3d}\t".format(i+1, length), end="", flush=True)
+    print("crawling", w, "...", end="", flush=True)
     if os.path.exists("etymonline/"+w+".txt"):
       print("already exists")
       continue

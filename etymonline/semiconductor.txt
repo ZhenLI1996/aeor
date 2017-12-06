@@ -1,0 +1,1 @@
+{"semiconductor": ["1838, \"material whose electrical conductivity is between that of a conductor and that of an insulator,\" from <a href=\"/word/semi-\" class=\"crossreference\">semi-</a> + <a href=\"/word/conductor\" class=\"crossreference\">conductor</a>. Modern very specific sense is recorded from 1931."]}

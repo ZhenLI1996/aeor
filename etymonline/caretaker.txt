@@ -1,0 +1,1 @@
+{"caretaker": ["also <span class=\"foreign\">care-taker</span>, \"one who takes care of something,\" 1769, from <a href=\"/word/care\" class=\"crossreference\">care</a> (n.) + agent noun of <a href=\"/word/take\" class=\"crossreference\">take</a> (v.). The back-formed verb <span class=\"foreign\">caretake</span> is attested by 1890."]}

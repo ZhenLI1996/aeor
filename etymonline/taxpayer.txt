@@ -1,0 +1,1 @@
+{"taxpayer": ["also <span class=\"foreign\">tax-payer</span>, 1816, from <a href=\"/word/tax\" class=\"crossreference\">tax</a> (n.) + <a href=\"/word/payer\" class=\"crossreference\">payer</a>."]}

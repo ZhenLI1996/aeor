@@ -1,0 +1,1 @@
+{"sonar": ["apparatus for detection underwater, 1946, from first letters of \"<span class=\"foreign\">so</span>und <span class=\"foreign\">na</span>vigation <span class=\"foreign\">r</span>anging,\" on pattern of <a href=\"/word/radar\" class=\"crossreference\">radar</a>."]}
