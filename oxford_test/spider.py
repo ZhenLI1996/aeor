@@ -54,6 +54,7 @@ class MyThread(threading.Thread):
     self.threadID = threadID
     self.wordlist = wordlist
   def run(self):
+    error_cnt = 0
     print("start thread", self.threadID)
     length = len(self.wordlist)
     
@@ -69,17 +70,27 @@ class MyThread(threading.Thread):
       code, log = download_word(w)
       if code < 0:
         # error
+        error_cnt += 1
         print(w, "error occurred, retry later")
         self.wordlist.insert(0, w)
         i -= 1
       elif code == 0:
+        error_cnt = 0
         suc_cnt += 1
         print(w, "successfully downloaded in this request")
       elif code == 1:
+        error_cnt = 0
         print(w, "already exists")
       code_list.append(code)
       whole_log += log + '\n'
-      print("suc_cnt/tot_time = {}/{:.3f}".format(suc_cnt, time.time() - t0))
+      print("suc_cnt/tot_time = {}/{:.3f}".format(suc_cnt, (time.time() - t0)*150/max(1, suc_cnt)))
+      if error_cnt >= 5:
+        # wait 
+        to_wait = 2**max((error_cnt-5), 60) * 60
+        print("error too much, waiting", to_wait)
+        time.sleep(to_wait)
+      
+      
     for c in code_list:
       d[c] += 1
     with open(LOG_PATH_TEMP.format(id=self.threadID), "w", encoding="utf-8") as fout:
@@ -90,7 +101,7 @@ class MyThread(threading.Thread):
     
 def multi_thread(thread_num=10):
   spider_num = thread_num
-  with open("to_crawl.txt", "r", encoding="utf-8") as fin:
+  with open("to_crawl_all_words.txt", "r", encoding="utf-8") as fin:
     wl = fin.read().split('\n')
   random.shuffle(wl)
   gap = int(len(wl) / spider_num) + 1
@@ -106,4 +117,4 @@ def multi_thread(thread_num=10):
 
 
 if __name__ == "__main__":
-  multi_thread(2)
+  multi_thread(1)
