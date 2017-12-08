@@ -9,7 +9,7 @@ import time
 
 DEFAULT_RULE = r'<meta property="og:title" content="([^/<>]*?)" />'
 
-def extract_from_html(wordlist_path="to_crawl.txt", html_temp="oxford/{}.html", 
+def og_title_tag_from_html(wordlist_path="to_crawl.txt", html_temp="oxford/{}.html",
                       rule=DEFAULT_RULE,
                       output_path="extract_output.txt", output_flag=True):
 
@@ -40,7 +40,7 @@ def extract_from_html(wordlist_path="to_crawl.txt", html_temp="oxford/{}.html",
     cnt += 1
     if cnt % 50 == 0:
       delta_t = (time.time() - t0) / cnt * (length - cnt)
-      print(cnt, "/", length, "; estimated: {.1f}".format(delta_t))
+      print(cnt, "/", length, "; estimated: {:.1f}".format(delta_t))
   
   if output_flag:
     with open(output_path, "w", encoding="utf-8") as fout:
@@ -48,7 +48,99 @@ def extract_from_html(wordlist_path="to_crawl.txt", html_temp="oxford/{}.html",
   print("done")
   return d
 
+
+
+def match_title(d):
+  r1 = []   # have result, "have_result == 1, r1"
+  r0 = []
+  for w, t in d.items():
+    if re.match(w, t):
+      r1.append(w)
+    else:
+      r0.append(w)
+  return r1, r0
+
+def find_derivative_of_or_origin(l, oxford_dir="oxford",
+                                 deriv_rule=r'<p class="derivative_of">See <a href="(.*?)">\1</a></p>',
+                                 origin_rule=r'<section class="etymology etym"><h3><strong>Origin</strong></h3><div class="senseInnerWrapper"><p>(.*?)</p></div></section>'):
+  # <p class="derivative_of">See <a href="wisecrack">wisecrack</a></p>
+  d = {}
+  deriv_r = re.compile(deriv_rule)
+  origin_r = re.compile(origin_rule)
+  for w in l:
+    fpath=os.path.join(oxford_dir, w+".html")
+    if not os.path.exists(fpath):
+      d[w] = "file not exists!"
+      continue
+    with open(fpath, "r", encoding='utf-8') as fin:
+      t = fin.read()
+    if deriv_r.search(t):
+      d[w] = deriv_r.findall(t)[0]
+    elif origin_r.search(t):
+      d[w] = origin_r.findall(t)[0]
+    else:
+      d[w] = "no derivative_of"
+  return d
+
+
+
+def __divide_single_word(word,
+                         oxford_dir="oxford",
+                         deriv_rule=r'<p class="derivative_of">See <a href="(.*?)">\1</a></p>',
+                         origin_rule=r'<section class="etymology etym"><h3><strong>Origin</strong></h3><div class="senseInnerWrapper"><p>(.*?)</p></div></section>',
+                         result_rule=r'<meta property="og:title" content="([^/<>]*?)" />'):
+  fpath = os.path.join(oxford_dir, word + ".html")
+  deriv_r = re.compile(deriv_rule)
+  origin_r = re.compile(origin_rule)
+  result_r = re.compile(result_rule)
+  if not os.path.exists(fpath):
+    return (word, "file not exists!")
+
+
+  with open(fpath, "r", encoding='utf-8') as fin:
+    t = fin.read()
+  if deriv_r.search(t):
+    return (word, deriv_r.findall(t)[0])
+  elif origin_r.search(t):
+    return (word, origin_r.findall(t)[0])
+  elif result_r.search(t):
+    return (word, "other")
+  else:
+    return (word, "not a word")
+def divide_deriv_origin_other_no(wordlist, oxford_dir="oxford",
+                                 deriv_rule=r'<p class="derivative_of">See <a href="(.*?)">\1</a></p>',
+                                 origin_rule=r'<section class="etymology etym"><h3><strong>Origin</strong></h3><div class="senseInnerWrapper"><p>(.*?)</p></div></section>'):
+  
+  stream = filter(__divide_single_word, wordlist)
+  return dict(stream)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if __name__ == "__main__":
+  '''
   print("start")
-  extract_from_html()
+  og_title_tag_from_html()
   print("end")
+  '''
+  with open("to_crawl.txt", "r", encoding='utf-8') as fin:
+    wl = fin.read().split('\n')
+  d = divide_deriv_origin_other_no(wl)
+  print(d)
