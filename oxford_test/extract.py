@@ -94,25 +94,28 @@ def __divide_single_word(word,
   origin_r = re.compile(origin_rule)
   result_r = re.compile(result_rule)
   if not os.path.exists(fpath):
-    return (word, "file not exists!")
+    return "file not exists!"
 
 
   with open(fpath, "r", encoding='utf-8') as fin:
     t = fin.read()
   if deriv_r.search(t):
-    return (word, deriv_r.findall(t)[0])
+    return deriv_r.findall(t)[0]
   elif origin_r.search(t):
-    return (word, origin_r.findall(t)[0])
+    return origin_r.findall(t)[0]
   elif result_r.search(t):
-    return (word, "other")
+    return "other"
   else:
-    return (word, "not a word")
+    return "not a word"
 def divide_deriv_origin_other_no(wordlist, oxford_dir="oxford",
                                  deriv_rule=r'<p class="derivative_of">See <a href="(.*?)">\1</a></p>',
                                  origin_rule=r'<section class="etymology etym"><h3><strong>Origin</strong></h3><div class="senseInnerWrapper"><p>(.*?)</p></div></section>'):
   
-  stream = filter(__divide_single_word, wordlist)
-  return dict(stream)
+  d = {}
+  for word in wordlist:
+    d[word] = __divide_single_word(word, oxford_dir=oxford_dir, deriv_rule=deriv_rule, origin_rule=origin_rule)
+    
+  return d
 
 
 
@@ -140,7 +143,7 @@ if __name__ == "__main__":
   og_title_tag_from_html()
   print("end")
   '''
-  with open("to_crawl.txt", "r", encoding='utf-8') as fin:
+  with open("to_crawl_all_words.txt", "r", encoding='utf-8') as fin:
     wl = fin.read().split('\n')
   d = divide_deriv_origin_other_no(wl)
   print(d)
