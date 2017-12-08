@@ -1,0 +1,26 @@
+cJEf2iokzbmshxtkkzKrYjxR2ANkp16Jv6Vjsn5cKyHkbdwBCK
+
+"X-Mashape-Key": key, "Accept": "application/json"
+
+key = 'cJEf2iokzbmshxtkkzKrYjxR2ANkp16Jv6Vjsn5cKyHkbdwBCK'
+headers = {"X-Mashape-Key": key, "Accept": "application/json"}
+url = 'https://wordsapiv1.p.mashape.com/words/teacher'
+req = urllib.request.Request(url, headers=headers)
+
+
+curl --get --include 'https://wordsapiv1.p.mashape.com/words/teacher' \
+  -H 'X-Mashape-Key: cJEf2iokzbmshxtkkzKrYjxR2ANkp16Jv6Vjsn5cKyHkbdwBCK' \
+  -H 'Accept: application/json'
+
+
+https://wordsapiv1.p.mashape.com/words/teacher?=X-Mashape-Key=cJEf2iokzbmshxtkkzKrYjxR2ANkp16Jv6Vjsn5cKyHkbdwBCK&Accept=application%2Fjson
+
+
+headers={
+    "X-Mashape-Key": "cJEf2iokzbmshxtkkzKrYjxR2ANkp16Jv6Vjsn5cKyHkbdwBCK",
+    "Accept": "application/json"
+}
+url = 'https://wordsapiv1.p.mashape.com/words/teacher'
+
+
+cJEf2iokzbmshxtkkzKrYjxR2ANkp16Jv6Vjsn5cKyHkbdwBCK

@@ -1,0 +1,327 @@
+crawling dowager ...done
+crawling sugar ...done
+crawling customer ...done
+crawling selangor ...done
+crawling dowitcher ...done
+crawling drover ...done
+crawling storyteller ...done
+crawling rector ...done
+crawling grandmother ...done
+crawling technicolor ...done
+crawling ledger ...done
+crawling newspaper ...done
+crawling decker ...done
+crawling vector ...done
+crawling backwater ...done
+crawling firepower ...done
+crawling blather ...done
+crawling cipher ...done
+crawling greengrocer ...done
+crawling bullfighter ...done
+crawling bannister ...done
+crawling registrar ...done
+crawling barber ...done
+crawling fiver ...done
+crawling limber ...done
+crawling spear ...done
+crawling foyer ...done
+crawling passenger ...done
+crawling pillar ...done
+crawling shelter ...done
+crawling blockbuster ...done
+crawling lacquer ...done
+crawling woodworker ...done
+crawling seeker ...done
+crawling ranger ...done
+crawling over ...done
+crawling jaguar ...done
+crawling cellar ...done
+crawling heather ...done
+crawling paymaster ...done
+crawling thermidor ...done
+crawling car ...done
+crawling bartender ...done
+crawling floor ...done
+crawling laser ...done
+crawling taxpayer ...done
+crawling foreigner ...done
+crawling platter ...done
+crawling trouser ...done
+crawling caretaker ...done
+crawling suitor ...done
+crawling crossover ...done
+crawling radar ...done
+crawling scriptwriter ...done
+crawling schoolteacher ...done
+crawling smallholder ...done
+crawling panther ...done
+crawling superstar ...done
+crawling denominator ...done
+crawling hosier ...done
+crawling plover ...done
+crawling officer ...done
+crawling decoder ...done
+crawling bruckner ...done
+crawling onlooker ...done
+crawling himmler ...done
+crawling newsletter ...done
+crawling demeanor ...done
+crawling stepmother ...done
+crawling trawler ...done
+crawling grandfather ...done
+crawling brazier ...done
+crawling midwinter ...done
+crawling garter ...done
+crawling cucumber ...done
+crawling grocer ...done
+crawling friar ...done
+crawling holidaymaker ...done
+crawling pioneer ...done
+crawling exterior ...done
+crawling leper ...done
+crawling plumber ...done
+crawling rudder ...done
+crawling pier ...done
+crawling teleprinter ...done
+crawling godmother ...done
+crawling supertanker ...done
+crawling biker ...done
+crawling altar ...done
+crawling geyser ...done
+crawling fertiliser ...done
+crawling holster ...done
+crawling matter ...done
+crawling matador ...done
+crawling clover ...done
+crawling helicopter ...done
+crawling shoemaker ...done
+crawling practitioner ...done
+crawling minder ...done
+crawling cashier ...done
+crawling picador ...done
+crawling codger ...done
+crawling schooner ...done
+crawling stranger ...done
+crawling banister ...done
+crawling grenadier ...done
+crawling muster ...done
+crawling loudspeaker ...done
+crawling stepdaughter ...done
+crawling justiciar ...done
+crawling alligator ...done
+crawling squalor ...done
+crawling trigger ...done
+crawling oar ...done
+crawling cofactor ...done
+crawling razor ...done
+crawling gasometer ...done
+crawling cantor ...done
+crawling streetcar ...done
+crawling tanker ...done
+crawling pawnbroker ...done
+crawling collar ...done
+crawling psalter ...done
+crawling drear ...done
+crawling glower ...done
+crawling forerunner ...done
+crawling sorcerer ...done
+crawling copywriter ...done
+crawling dagger ...done
+crawling banter ...done
+crawling songwriter ...done
+crawling hangover ...done
+crawling backdoor ...done
+crawling tar ...done
+crawling saucer ...done
+crawling debtor ...done
+crawling par ...done
+crawling chamber ...done
+crawling liquidiser ...done
+crawling ginger ...done
+crawling teenager ...done
+crawling ganger ...done
+crawling bystander ...done
+crawling postmaster ...done
+crawling prisoner ...done
+crawling brigadier ...done
+crawling cigar ...done
+crawling woofer ...done
+crawling progenitor ...done
+crawling dossier ...done
+crawling burgher ...done
+crawling barrister ...done
+crawling kilter ...done
+crawling sunflower ...done
+crawling monsignor ...done
+crawling tractor ...done
+crawling staffer ...done
+crawling breadwinner ...done
+crawling frontier ...done
+crawling carmaker ...done
+crawling alabaster ...done
+crawling oculomotor ...done
+crawling beaker ...done
+crawling willpower ...done
+crawling misnomer ...done
+crawling viper ...done
+crawling harbinger ...done
+crawling microcomputer ...done
+crawling lavender ...done
+crawling widower ...done
+crawling welter ...done
+crawling dressmaker ...done
+crawling mentor ...done
+crawling clutter ...done
+crawling patter ...done
+crawling undertaker ...done
+crawling leander ...done
+crawling polyester ...done
+crawling hairdresser ...done
+crawling organiser ...done
+crawling gravedigger ...done
+crawling oscillator ...done
+crawling junior ...done
+crawling barrier ...done
+crawling zoster ...done
+crawling forebear ...done
+crawling cheddar ...done
+crawling fear ...done
+crawling perimeter ...done
+crawling alder ...done
+crawling stationer ...done
+crawling slipper ...done
+crawling dryer ...done
+crawling stepfather ...done
+crawling winger ...done
+crawling rover ...done
+crawling ostler ...done
+crawling forefinger ...done
+crawling bookmaker ...done
+crawling butler ...done
+crawling trooper ...done
+crawling seawater ...done
+crawling border ...done
+crawling forager ...done
+crawling schoolmaster ...done
+crawling censer ...done
+crawling bandleader ...done
+crawling tiger ...done
+crawling ladder ...done
+crawling chandelier ...done
+crawling manpower ...done
+crawling cropper ...done
+crawling amor ...done
+crawling amber ...done
+crawling heritor ...done
+crawling retainer ...done
+crawling villager ...done
+crawling lobster ...done
+crawling newscaster ...done
+crawling river ...done
+crawling pedlar ...done
+crawling semiconductor ...done
+crawling timber ...done
+crawling flexor ...done
+crawling shoulder ...done
+crawling hexameter ...done
+crawling ringmaster ...done
+crawling shareholder ...done
+crawling charter ...done
+crawling tenor ...done
+crawling beachcomber ...done
+crawling wrongdoer ...done
+crawling troublemaker ...done
+crawling mirror ...done
+crawling spinnaker ...done
+crawling door ...done
+crawling ear ...done
+crawling skyscraper ...done
+crawling youngster ...done
+crawling antechamber ...done
+crawling hamburger ...done
+crawling boar ...done
+crawling bunker ...done
+crawling underwear ...done
+crawling realtor ...done
+crawling rapier ...done
+crawling spillover ...done
+crawling lager ...done
+crawling hussar ...done
+crawling power ...done
+crawling godfather ...done
+crawling chapter ...done
+crawling bar ...done
+crawling snigger ...done
+crawling laughter ...done
+crawling camcorder ...done
+crawling springer ...done
+crawling behavior ...done
+crawling rotor ...done
+crawling rentier ...done
+crawling fishmonger ...done
+crawling financier ...done
+crawling grandmaster ...done
+crawling encounter ...done
+crawling mahler ...done
+crawling stover ...done
+crawling snooker ...done
+crawling stockbroker ...done
+crawling granddaughter ...done
+crawling howitzer ...done
+crawling multiplexer ...done
+crawling footwear ...done
+crawling commoner ...done
+crawling melchior ...done
+crawling housemaster ...done
+crawling tremor ...Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/urllib3/connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "/usr/local/lib/python3.5/site-packages/urllib3/connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.5/site-packages/urllib3/connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.5/site-packages/urllib3/connection.py", line 326, in connect
+    ssl_context=context)
+  File "/usr/local/lib/python3.5/site-packages/urllib3/util/ssl_.py", line 329, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/local/lib/python3.5/ssl.py", line 377, in wrap_socket
+    _context=self)
+  File "/usr/local/lib/python3.5/ssl.py", line 752, in __init__
+    self.do_handshake()
+  File "/usr/local/lib/python3.5/ssl.py", line 988, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/local/lib/python3.5/ssl.py", line 633, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:645)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/usr/local/lib/python3.5/site-packages/urllib3/connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/lib/python3.5/site-packages/urllib3/util/retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.etymonline.com', port=443): Max retries exceeded with url: /word/tremor (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:645)'),))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d1205.py", line 11, in <module>
+    etym_crawler.crawl_list(l)
+  File "/root/corpus_ling/aeor/etym_crawler.py", line 25, in crawl_list
+    r = __crawl_single_word(w)
+  File "/root/corpus_ling/aeor/etym_crawler.py", line 13, in __crawl_single_word
+    response = requests.get(url)
+  File "/usr/local/lib/python3.5/site-packages/requests/api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python3.5/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.5/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.5/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.5/site-packages/requests/adapters.py", line 506, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='www.etymonline.com', port=443): Max retries exceeded with url: /word/tremor (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:645)'),))
