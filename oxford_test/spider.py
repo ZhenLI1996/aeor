@@ -54,7 +54,7 @@ class MyThread(threading.Thread):
     self.threadID = threadID
     self.wordlist = wordlist
   def run(self):
-    error_cnt = 0
+    block_cnt = 0
     print("start thread", self.threadID)
     length = len(self.wordlist)
     
@@ -66,27 +66,32 @@ class MyThread(threading.Thread):
     suc_cnt = 0
     for w in self.wordlist:
       i += 1
-      print("id:{}, {:2}/{:2}".format(self.threadID, i, length))
       code, log = download_word(w)
-      if code < 0:
-        # error
-        error_cnt += 1
-        print(w, "error occurred, retry later")
+      if code == -2:
+        # blocked
+        block_cnt += 1
+        print("id:{}, {:2}/{:2}".format(self.threadID, i, length), w, "blocked, retry later")
         self.wordlist.insert(0, w)
+        i -= 1        
+      elif code < 0:
+        # error
+        print("id:{}, {:2}/{:2}".format(self.threadID, i, length), w, "error occurred, retry later")
+        self.wordlist.append(w)
         i -= 1
       elif code == 0:
-        error_cnt = 0
+        block_cnt = 0
         suc_cnt += 1
-        print(w, "successfully downloaded in this request")
+        print("id:{}, {:2}/{:2}".format(self.threadID, i, length), w, "successfully downloaded in this request")
+        print("suc_cnt/tot_time = {}/{:.3f}".format(suc_cnt, (time.time() - t0)*35/max(1, suc_cnt)))
       elif code == 1:
-        error_cnt = 0
-        print(w, "already exists")
+        #block_cnt = 0
+        #print(w, "already exists")
+        pass
       code_list.append(code)
       whole_log += log + '\n'
-      print("suc_cnt/tot_time = {}/{:.3f}".format(suc_cnt, (time.time() - t0)*150/max(1, suc_cnt)))
-      if error_cnt >= 5:
+      if block_cnt >= 5:
         # wait 
-        to_wait = 2**max((error_cnt-5), 60) * 60
+        to_wait = min(2**(block_cnt-5), 60) * 60
         print("error too much, waiting", to_wait)
         time.sleep(to_wait)
       
@@ -117,4 +122,4 @@ def multi_thread(thread_num=10):
 
 
 if __name__ == "__main__":
-  multi_thread(1)
+  multi_thread(2)

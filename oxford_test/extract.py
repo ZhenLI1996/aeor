@@ -107,6 +107,7 @@ def __divide_single_word(word,
     return "other"
   else:
     return "not a word"
+    
 def divide_deriv_origin_other_no(wordlist, oxford_dir="oxford",
                                  deriv_rule=r'<p class="derivative_of">See <a href="(.*?)">\1</a></p>',
                                  origin_rule=r'<section class="etymology etym"><h3><strong>Origin</strong></h3><div class="senseInnerWrapper"><p>(.*?)</p></div></section>'):
