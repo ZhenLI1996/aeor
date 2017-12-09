@@ -100,9 +100,13 @@ def __divide_single_word(word,
   elif origin_r.search(t):
     return origin_r.findall(t)[0], 2
   elif result_r.search(t):
-    return "other", 0
+    title = result_r.findall(t)[0]
+    if re.match(word, title):
+      return "other", 0
+    else:
+      return "not a word", -1
   else:
-    return "not a word", -1
+    return "unknown", -999
     
 def divide_deriv_origin_other_no(wordlist, oxford_dir="oxford",
                                  deriv_rule=r'<p class="derivative_of">See <a href="(.*?)">\1</a></p>',
@@ -143,7 +147,19 @@ def divide_deriv_origin_other_no_to_csv(wordlist, oxford_dir="oxford",
       t0 = time.time()
 
   df = pd.DataFrame(data, columns=['word', 'detail', 'code'])
-  df.to_csv("oxford_full_1209.csv", encoding="utf-8")
+  df.to_csv("oxford_divide_new/oxford_full_1209.csv", encoding="utf-8")
+
+  # code: 1(deriv), 2(origin), 0(other), -1(naw), -9(fne), -999(unknwon)
+  for code in [1,2,0,-1,-9,-999]:
+    temp_df = df[df.code==code]
+    temp_df.to_csv("oxford_divide_new/code_{}.csv".format(code), encoding="utf-8")
+  
+  with open("oxford_divide_new/to_wordsapi.txt", "w", encoding="utf-8") as fout:
+    for w in df[df.code==2].word:
+      fout.write(w+'\n')
+    for w in df[df.code==0].word:
+      fout.write(w+'\n')
+
   return df
 
 
