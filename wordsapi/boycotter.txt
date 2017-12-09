@@ -1,0 +1,1 @@
+{"word":"boycotter","syllables":{"count":3,"list":["boy","cott","er"]}}

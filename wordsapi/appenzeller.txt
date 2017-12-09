@@ -1,0 +1,1 @@
+{"word":"appenzeller","results":[{"definition":"a smaller of the four Swiss breeds","partOfSpeech":"noun","typeOf":["sennenhunde"]}],"pronunciation":"'æpɪnzʌlɝr"}

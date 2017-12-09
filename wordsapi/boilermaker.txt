@@ -1,0 +1,1 @@
+{"rhymes":{"all":"-eɪkər"},"word":"boilermaker","syllables":{"count":4,"list":["boil","er","mak","er"]},"pronunciation":"'bɔɪlɝr,meɪkɝr","frequency":1.82}

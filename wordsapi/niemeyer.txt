@@ -1,0 +1,1 @@
+{"word":"niemeyer","syllables":{"count":3,"list":["nie","mey","er"]},"pronunciation":"'nimaɪɝr","frequency":2.33}
