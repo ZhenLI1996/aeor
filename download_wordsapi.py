@@ -64,6 +64,28 @@ def download_other_1208():
   with open('download_log.txt', 'a', encoding='utf-8') as fout:
     fout.write(log)
     
+def download_other_1210():
+  with open("to_wordsapi_1210.txt", "r", encoding="utf-8") as fin:
+    t = fin.read()
+  targets = t.split('\n')
+
+  log = "\n\n===" + str(datetime.datetime.now()) + "===\n\n"
+  log_temp = "{word}: {state}\n"
+  i = 0
+  cnt = 0
+  while cnt < 2450 and i < len(targets):
+    w = targets[i]
+    print(cnt, w)
+    ret = __download_word(w)
+    log += log_temp.format(word=w, state=ret)
+    print("\t" + str(ret))
+    if ret == "download successfully":
+      cnt += 1
+    i += 1
+    
+  with open('download_log.txt', 'a', encoding='utf-8') as fout:
+    fout.write(log)
+    
   
 
 if __name__ == "__main__":
@@ -78,4 +100,4 @@ if __name__ == "__main__":
   else:
     download(remain[:2450])
   '''
-  download_other_1208()
+  download_other_1210()
