@@ -1,0 +1,1 @@
+{"rhymes":{"all":"-ɑtər"},"frequency":2.02,"word":"bogtrotter","syllables":{"count":3,"list":["bog","trot","ter"]},"pronunciation":{}}
