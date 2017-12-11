@@ -1,5 +1,4 @@
-,word,detail,code
-0,absconder,abscond,11
+id,word,detail,code
 1,abseiler,abseil,11
 2,absorber,absorb,11
 3,abstainer,abstain,11
@@ -1250,8 +1249,8 @@
 1248,chamfer,no derivations in wordsapi,0
 1249,chancellor,no proper derivation,0
 1250,chandelier,no derivations in wordsapi,0
-1251,chandler,file not exists,-9
-1252,chanter,file not exists,-9
+1251,chandler,no derivations in wordsapi,0
+1252,chanter,chant,12
 1253,chanticleer,no results in wordsapi,0
 1254,chapter,no derivations in wordsapi,0
 1255,char,no derivations in wordsapi,0
@@ -1283,7 +1282,7 @@
 1281,circular,circle,12
 1282,citator,no results in wordsapi,0
 1283,citer,no results in wordsapi,0
-1284,classificator,file not exists,-9
+1284,classificator,no results in wordsapi,0
 1285,clatter,no derivations in wordsapi,0
 1286,clavier,no derivations in wordsapi,0
 1287,clear,no proper derivation,0
@@ -1325,7 +1324,7 @@
 1323,condor,no derivations in wordsapi,0
 1324,conductor,conduct,12
 1325,confessor,confess,12
-1326,confiteor,file not exists,-9
+1326,confiteor,no results in wordsapi,0
 1327,conformer,no results in wordsapi,0
 1328,congener,no derivations in wordsapi,0
 1329,conger,no derivations in wordsapi,0
@@ -1355,7 +1354,7 @@
 1353,councillor,no proper derivation,0
 1354,counsellor,counsel,12
 1355,counter,count,12
-1356,countertenor,file not exists,-9
+1356,countertenor,no derivations in wordsapi,0
 1357,courier,no derivations in wordsapi,0
 1358,courser,no derivations in wordsapi,0
 1359,courtier,no derivations in wordsapi,0
@@ -1453,7 +1452,7 @@
 1451,dulcimer,no derivations in wordsapi,0
 1452,dumpster,no derivations in wordsapi,0
 1453,durbar,no derivations in wordsapi,0
-1454,dynamometer,file not exists,-9
+1454,dynamometer,no derivations in wordsapi,0
 1455,ear,no derivations in wordsapi,0
 1456,easter,no proper derivation,0
 1457,editor,edit,12
@@ -1520,7 +1519,7 @@
 1518,fever,no proper derivation,0
 1519,fiddler,fiddle,12
 1520,filibuster,no proper derivation,0
-1521,filler,file not exists,-9
+1521,filler,fill,12
 1522,filmer,no results in wordsapi,0
 1523,filter,no proper derivation,0
 1524,filterer,no results in wordsapi,0
@@ -1616,7 +1615,7 @@
 1614,gossamer,no derivations in wordsapi,0
 1615,governor,govern,12
 1616,grammar,no proper derivation,0
-1617,grazier,file not exists,-9
+1617,grazier,graze,12
 1618,greener,no results in wordsapi,0
 1619,grenadier,no derivations in wordsapi,0
 1620,gricer,no results in wordsapi,0
@@ -1786,7 +1785,7 @@
 1784,larder,no derivations in wordsapi,0
 1785,lascar,no derivations in wordsapi,0
 1786,laser,no derivations in wordsapi,0
-1787,laster,file not exists,-9
+1787,laster,no results in wordsapi,0
 1788,lather,no proper derivation,0
 1789,latter,no derivations in wordsapi,0
 1790,laughter,no derivations in wordsapi,0
@@ -1856,7 +1855,7 @@
 1854,manger,no derivations in wordsapi,0
 1855,manner,no proper derivation,0
 1856,mannlicher,no results in wordsapi,0
-1857,manometer,file not exists,-9
+1857,manometer,no derivations in wordsapi,0
 1858,manor,no proper derivation,0
 1859,mariner,no derivations in wordsapi,0
 1860,maser,no derivations in wordsapi,0
@@ -1945,7 +1944,7 @@
 1943,moulder,no derivations in wordsapi,0
 1944,mucker,no results in wordsapi,0
 1945,mudaliyar,no results in wordsapi,0
-1946,mudejar,file not exists,-9
+1946,mudejar,no results in wordsapi,0
 1947,mugger,mug,12
 1948,mukhtar,no results in wordsapi,0
 1949,muleteer,mule,12
@@ -2038,12 +2037,12 @@
 2036,overpronator,no results in wordsapi,0
 2037,overruler,no results in wordsapi,0
 2038,overseer,oversee,12
-2039,oversupinator,file not exists,-9
+2039,oversupinator,no results in wordsapi,0
 2040,ower,no results in wordsapi,0
 2041,oxter,no results in wordsapi,0
 2042,oyster,no derivations in wordsapi,0
 2043,padder,no derivations in wordsapi,0
-2044,painstaker,file not exists,-9
+2044,painstaker,no results in wordsapi,0
 2045,painter,paint,12
 2046,palaver,no derivations in wordsapi,0
 2047,pallor,pale,12
@@ -2052,7 +2051,7 @@
 2050,palmier,no results in wordsapi,0
 2051,palpifer,no results in wordsapi,0
 2052,palpiger,no results in wordsapi,0
-2053,pander,file not exists,-9
+2053,pander,no proper derivation,0
 2054,paneer,no results in wordsapi,0
 2055,panner,no results in wordsapi,0
 2056,pannier,no derivations in wordsapi,0
@@ -2605,7 +2604,7 @@
 2603,tolar,no results in wordsapi,0
 2604,tomorrer,no results in wordsapi,0
 2605,tonometer,no derivations in wordsapi,0
-2606,tor,file not exists,-9
+2606,tor,no derivations in wordsapi,0
 2607,toreador,no derivations in wordsapi,0
 2608,torpor,no derivations in wordsapi,0
 2609,tortfeasor,no derivations in wordsapi,0
@@ -2631,7 +2630,7 @@
 2629,trocar,no results in wordsapi,0
 2630,trochanter,no derivations in wordsapi,0
 2631,troper,no results in wordsapi,0
-2632,trouper,file not exists,-9
+2632,trouper,no derivations in wordsapi,0
 2633,trover,no results in wordsapi,0
 2634,tsar,no proper derivation,0
 2635,tuber,no proper derivation,0
@@ -2672,7 +2671,7 @@
 2670,vesper,no derivations in wordsapi,0
 2671,vetter,no results in wordsapi,0
 2672,vicar,no proper derivation,0
-2673,victor,file not exists,-9
+2673,victor,no derivations in wordsapi,0
 2674,victualler,victual,12
 2675,vinegar,no derivations in wordsapi,0
 2676,vintner,no derivations in wordsapi,0
@@ -2904,7 +2903,7 @@
 2902,bouncer,bounce,12
 2903,bounder,bound,12
 2904,bowyer,no results in wordsapi,0
-2905,boxcar,file not exists,-9
+2905,boxcar,no derivations in wordsapi,0
 2906,brainpower,no derivations in wordsapi,0
 2907,braunschweiger,no results in wordsapi,0
 2908,breadwinner,no derivations in wordsapi,0
@@ -3031,7 +3030,7 @@
 3029,communicator,communicate,12
 3030,commutator,commutate,12
 3031,commuter,commute,12
-3032,comonomer,file not exists,-9
+3032,comonomer,no results in wordsapi,0
 3033,comper,no results in wordsapi,0
 3034,competitor,compete,12
 3035,compiler,compile,12
@@ -3101,7 +3100,7 @@
 3099,cruncher,no results in wordsapi,0
 3100,crusader,crusade,12
 3101,cryer,no results in wordsapi,0
-3102,cultivator,file not exists,-9
+3102,cultivator,cultivate,12
 3103,curler,curl,12
 3104,curricular,no proper derivation,0
 3105,customer,no derivations in wordsapi,0
@@ -3122,7 +3121,7 @@
 3120,daywear,no results in wordsapi,0
 3121,dazzler,no results in wordsapi,0
 3122,dealer,deal,12
-3123,dealmaker,file not exists,-9
+3123,dealmaker,no results in wordsapi,0
 3124,debater,debate,12
 3125,debtor,no derivations in wordsapi,0
 3126,debugger,debug,12
@@ -3236,7 +3235,7 @@
 3234,drummer,drum,12
 3235,dumper,dump,12
 3236,duplicator,duplicate,12
-3237,duster,file not exists,-9
+3237,duster,dust,12
 3238,dweller,dwell,12
 3239,dyer,dye,12
 3240,earner,earn,12
@@ -3262,7 +3261,7 @@
 3260,emulsifier,emulsify,12
 3261,enabler,no results in wordsapi,0
 3262,enchanter,enchant,12
-3263,endear,file not exists,-9
+3263,endear,no proper derivation,0
 3264,endmember,no results in wordsapi,0
 3265,endpaper,no results in wordsapi,0
 3266,enforcer,enforce,12
@@ -3366,7 +3365,7 @@
 3364,forerunner,no derivations in wordsapi,0
 3365,forger,forge,12
 3366,forrader,no derivations in wordsapi,0
-3367,forwarder,file not exists,-9
+3367,forwarder,no results in wordsapi,0
 3368,framer,frame,12
 3369,fraudster,no results in wordsapi,0
 3370,freelancer,freelance,12
@@ -3388,7 +3387,7 @@
 3386,fundraiser,no derivations in wordsapi,0
 3387,funkster,no results in wordsapi,0
 3388,funster,no results in wordsapi,0
-3389,furnisher,file not exists,-9
+3389,furnisher,no results in wordsapi,0
 3390,galvanometer,no derivations in wordsapi,0
 3391,gambler,gamble,12
 3392,gamekeeper,no derivations in wordsapi,0
@@ -3669,14 +3668,14 @@
 3667,lexicographer,lexicography,12
 3668,libber,no derivations in wordsapi,0
 3669,liberator,liberate,12
-3670,lifer,file not exists,-9
+3670,lifer,life,12
 3671,lifesaver,no derivations in wordsapi,0
 3672,lightener,no results in wordsapi,0
 3673,limeburner,no results in wordsapi,0
 3674,limiter,limit,12
 3675,limner,limn,12
 3676,linebacker,no derivations in wordsapi,0
-3677,liner,file not exists,-9
+3677,liner,line,12
 3678,linker,no results in wordsapi,0
 3679,linter,no results in wordsapi,0
 3680,liquidator,liquidate,12
@@ -4213,7 +4212,7 @@
 4211,sensorimotor,no derivations in wordsapi,0
 4212,separator,separate,12
 4213,sequencer,sequence,12
-4214,server,file not exists,-9
+4214,server,serve,12
 4215,servicer,no results in wordsapi,0
 4216,servomotor,no results in wordsapi,0
 4217,setter,no derivations in wordsapi,0
@@ -4249,7 +4248,7 @@
 4247,showstopper,no derivations in wordsapi,0
 4248,shredder,shred,12
 4249,shrimper,shrimp,12
-4250,shunter,file not exists,-9
+4250,shunter,shunt,12
 4251,shutter,shut,12
 4252,sickener,no results in wordsapi,0
 4253,sidebar,no derivations in wordsapi,0
@@ -4292,7 +4291,7 @@
 4290,slipper,no derivations in wordsapi,0
 4291,slugger,slug,12
 4292,smacker,smack,12
-4293,smasher,file not exists,-9
+4293,smasher,smash,12
 4294,smelter,smelt,12
 4295,smoker,smoke,12
 4296,smuggler,smuggle,12
@@ -4351,7 +4350,7 @@
 4349,stager,stage,12
 4350,stakeholder,no derivations in wordsapi,0
 4351,staker,no results in wordsapi,0
-4352,stalker,file not exists,-9
+4352,stalker,stalk,12
 4353,stallholder,no results in wordsapi,0
 4354,stapler,staple,12
 4355,stargazer,stargaze,12
@@ -4459,7 +4458,7 @@
 4457,switchover,no results in wordsapi,0
 4458,sympathizer,sympathize,12
 4459,synthesizer,synthesize,12
-4460,tabulator,file not exists,-9
+4460,tabulator,no derivations in wordsapi,0
 4461,tachometer,no derivations in wordsapi,0
 4462,tagger,no derivations in wordsapi,0
 4463,taildragger,no results in wordsapi,0
@@ -4552,7 +4551,7 @@
 4550,trier,try,12
 4551,trimer,no derivations in wordsapi,0
 4552,trimmer,trim,12
-4553,tripper,file not exists,-9
+4553,tripper,trip,12
 4554,trochlear,no derivations in wordsapi,0
 4555,trooper,no derivations in wordsapi,0
 4556,trotter,trot,12
@@ -4635,12 +4634,12 @@
 4633,weedkiller,no derivations in wordsapi,0
 4634,weekender,weekend,12
 4635,weeper,weep,12
-4636,welder,file not exists,-9
+4636,welder,weld,12
 4637,westerner,no derivations in wordsapi,0
 4638,whaler,whale,12
 4639,whatever,no derivations in wordsapi,0
 4640,wheeler,wheel,12
-4641,whereafter,file not exists,-9
+4641,whereafter,no results in wordsapi,0
 4642,whisperer,whisper,12
 4643,whistler,whistle,12
 4644,wholesaler,wholesale,12
@@ -4656,7 +4655,7 @@
 4654,willpower,no derivations in wordsapi,0
 4655,windbreaker,no derivations in wordsapi,0
 4656,windcheater,no derivations in wordsapi,0
-4657,winder,file not exists,-9
+4657,winder,wind,12
 4658,windflower,no derivations in wordsapi,0
 4659,windhover,no results in wordsapi,0
 4660,windjammer,no derivations in wordsapi,0
@@ -4669,7 +4668,7 @@
 4667,wobbler,wobble,12
 4668,womanizer,womanize,12
 4669,womenswear,no results in wordsapi,0
-4670,woodcutter,file not exists,-9
+4670,woodcutter,no derivations in wordsapi,0
 4671,woodlander,no results in wordsapi,0
 4672,woodpecker,no derivations in wordsapi,0
 4673,worker,work,12
@@ -4686,10 +4685,11 @@
 4684,yardmaster,no derivations in wordsapi,0
 4685,yer,no results in wordsapi,0
 4686,yesteryear,no derivations in wordsapi,0
-4687,yielder,file not exists,-9
+4687,yielder,yield,12
 4688,youngster,no derivations in wordsapi,0
 4689,zapper,zap,12
 4690,zester,no results in wordsapi,0
 4691,zinger,no derivations in wordsapi,0
 4692,zipper,zip,12
 4693,zookeeper,no results in wordsapi,0
+4694,absconder,abscond,11
