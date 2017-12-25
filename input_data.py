@@ -123,7 +123,10 @@ def main():
   for index, row in df2.iterrows():
     w = row['word']
     code, detail = wordsapi(w)
-    l.append([w, detail, code])
+    if code == 0:
+      l.append([w, row['detail'], 2])
+    else:
+      l.append([w, detail, code])
     cnt += 1
     if cnt % 20 == 0:
       print("df2:{}/{}".format(cnt, length))
@@ -139,6 +142,7 @@ def main():
   print("creating dataframe")
   df = pd.DataFrame(l, columns=['word', 'detail', 'code'])
   print("write to file")
+  df.index += 1
   df.to_csv("oxford_wordsapi_divide.csv", encoding='utf-8')
   print("done")
   return df
