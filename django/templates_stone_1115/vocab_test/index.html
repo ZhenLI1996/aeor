@@ -1,0 +1,94 @@
+{% extends "frameworks/bs4.html" %}
+
+{% load staticfiles %}
+
+{% block my_script %}
+<script type="text/javascript">
+
+function choose(div){
+  console.log($(div).text());
+  choice = $(div).attr('id');
+  if(choice === 'btn_A'){
+    answer = 'A';
+  }
+  else if(choice === 'btn_B'){
+    answer = 'B';
+  }
+  else if(choice === 'btn_C'){
+    answer = 'C';
+  }
+  else if(choice === 'btn_D'){
+    answer = 'D';
+  }
+  else if(choice === 'btn_E'){
+    answer = 'E';
+  }
+  $('input[name=answer]').val(answer);
+  console.log($('input[name=q_id]').val());
+  $("form").submit();
+}
+
+$(document).ready(function(){
+    //console.log("index.html");
+});
+
+/*$(document).ready(function(){
+  $("button").click(function(){
+  $(this).hide();
+});
+});*/
+</script>
+{% endblock %}
+
+{% block my_css %}
+button.choice{
+  margin: 1%;
+  width: 100%;
+}
+{% endblock %}
+
+{% block head_title %}
+  <title>vocab test</title>
+{% endblock %}
+
+{% block body %}
+<div class="container"><form method="post" action="/vocab_test/{{user_id}}/">
+{% csrf_token %}  
+  <input type="hidden" name="answer" value="E">
+  <input type="hidden" name="correct" value="{{correct}}">
+  <input type="hidden" name="q_id" value={{q_id}}>
+  <input type="hidden" name="q_answered" value={{q_answered}}>
+  <input type="hidden" name="total_cnt" value={{total_cnt}}>
+  <input type="hidden" name="correct_cnt" value={{correct_cnt}}>
+  <input type="hidden" name="ans_rec" value={{ans_rec}}>
+  <input type="hidden" name="cur_diff" value={{cur_diff}}>
+  <div class="card" style="margin-top: 2%;">
+    <div class="card-body">
+      
+      <h4 class="card-title" style="  text-align: center;">{{question}}</h4>
+      
+      <div class="row align-items-center">
+        <div class="col-12 align-items-center">
+          <button type="button" class="choice btn btn-light" onclick="choose(this)" id="btn_A" >{{A}}</button>
+        </div>
+        <div class="col-12 align-items-center">
+          <button type="button" class="choice btn btn-light" onclick="choose(this)" id="btn_B" >{{B}}</button>
+          </div>
+        <div class="col-12 align-items-center">
+          <button type="button" class="choice btn btn-light" onclick="choose(this)" id="btn_C" >{{C}}</button>
+        </div>
+        <div class="col-12 align-items-center">
+          <button type="button" class="choice btn btn-light" onclick="choose(this)" id="btn_D" >{{D}}</button>
+        </div>
+        <div class="col-12 align-items-center">
+          <button type="button" class="choice btn btn-light" onclick="choose(this)" id="btn_E" >{{E}}</button>
+        </div>
+      </div>
+      <div style="text-align:right;">
+        <p>{{total_cnt}}/20</p>
+      </div>
+    </div>
+  </div>
+  <br>
+</form></div>
+{% endblock %} 

@@ -1,0 +1,24 @@
+{% extends "frameworks/bs4.html" %}
+
+{% load staticfiles %}
+
+{% block my_script %}
+{% endblock %}
+
+{% block my_css %}
+{% endblock %}
+
+{% block head_title %}
+  <title></title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <h4>测试完毕！</h4>
+  <br>
+  <h5>{{user_name}} 同学：</h5>
+  <p>你答对了 {{correct_cnt}}/{{total_cnt}} 个问题！</p>
+  <p>{{details|safe}}</p>
+  <br>
+</div>
+{% endblock %} 

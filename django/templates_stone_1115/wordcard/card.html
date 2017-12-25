@@ -1,0 +1,59 @@
+{% extends "frameworks/bs4.html" %}
+
+{% load staticfiles %}
+
+{% block my_script %}
+<script type="text/javascript">
+
+function prev(div){
+  $('input[name=act]').val('prev');
+  jump();
+}
+
+function next(div){
+  $('input[name=act]').val('next');
+  jump();
+}
+
+function jump(){
+  $("form").submit();
+}
+
+$(document).ready(function(){
+    //console.log("index.html");
+});
+
+</script>
+{% endblock %}
+
+{% block my_css %}
+.highlight{
+  color: red;
+}
+{% endblock %}
+
+{% block head_title %}
+  <title>词卡：{{word}}</title>
+{% endblock %}
+
+{% block body %}
+<div class="container"><form method="post" action="/wordcard/">
+{% csrf_token %}  
+  <input type="hidden" name="id" value={{id}}>
+  <input type="hidden" name="card_cnt" value={{card_cnt}}>
+  <input type="hidden" name="goal" value={{goal}}>
+  <input type="hidden" name="act" value="next">
+  <div class="card" style="margin-top: 10%">
+    <img class="card-img-top" src='{% static "wc_top.jpg" %}' alt="Card image bottom" />
+    <div class="card-body">
+      <h4 class="card-title">{{word}} <span style="font-size:70%">{{pron}}</span></h4>
+      <p>{{property}} {{exp}}</p>
+      <p>{{sent|safe}}<br />{{sent_trans}}</p>
+      <a onclick="prev(this)" class="btn btn-light" style="float: left;">上一个</a>
+      <a onclick="next(this)" class="btn btn-light" style="float: right;">下一个</a>
+    </div>
+    <img class="card-img-bottom" src='{% static "wc_bottom.jpg" %}' alt="Card image bottom" />
+  </div>
+  <br />
+</form></div>
+{% endblock %} 

@@ -1,0 +1,28 @@
+{% extends "frameworks/bs4.html" %}
+
+{% load staticfiles %}
+
+{% block my_script %}
+<script type="text/javascript">
+$(document).ready(function(){
+    //console.log("blackhole.html");
+});
+</script>
+{% endblock %}
+
+{% block my_css %}
+{% endblock %}
+
+{% block head_title %}
+  <title></title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <p>blackhole!</p>
+  <p>{{answer}}</p>
+  <p>{{last_q_id}}</p>
+  <p>{{result}}</p>
+  <br>
+</div>
+{% endblock %} 

@@ -1,0 +1,70 @@
+{% extends "frameworks/bs4.html" %}
+
+{% load staticfiles %}
+
+{% block my_css %}
+div.card{
+  box-shadow: 0px 0px 5px #888888;
+}
+img.headimg{
+  border-radius: 50%;
+  border: 10px solid #f5f5f5;
+  box-sizing: border-box;
+  margin:10%;
+}
+.cardtext{
+  text-align: center;
+  color: #353535;
+}
+.bottomtext{
+  color: #FFFFFF; 
+}
+p.bottomtext{
+  font-size:90%;
+}
+{% endblock %}
+
+{% block head_title %}
+  <title>{{name}}在跟ta学单词坚持了{{sign_cnt}}天</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <div class="card" style="margin-top: 10%;">
+    <img class="card-img-top mx-auto rounded-circle" src="{{headimgurl}}" alt="Card image" style="width:50%; margin: 5%;">
+    <div class="card-body">
+      <h4 class="card-title cardtext">单词打卡签到群</h4>
+      <!--h4 class="card-title cardtext">{{group_info}}</h4-->
+      <h3 class="card-title cardtext">{{name}}</h4>
+      <div class="row align-items-center">
+        <div class="col-6">
+          <h5 class="card-title cardtext" style="color: #F08B58">已在跟ta学</h4>
+          <h4 class="card-title cardtext">{{sign_cnt}} Days</h4>
+        </div>
+        <div class="col-6">
+          <h5 class="card-title cardtext" style="color: #F08B58">坚持单词背诵</h4>
+          <h4 class="card-title cardtext">{{word_cnt}} Words</h4>
+        </div>
+      </div>      
+
+
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" style="background-color: #F08B58;">
+        <div class="row align-items-center">
+          <div class="col-8 align-items-center" >
+            <p class="bottomtext">长按识别二维码关注</p>
+            <h2 class="bottomtext">跟ta学</h2>
+            <p class="bottomtext">碎片化时间，解决语言难题</p>
+          </div>
+          <div class="col-4">
+            <!--img src="{% static qrcode_url %}" alt="{{qrcode_url}}" style="margin:10%"/-->
+            <img src="{{qrcode_url_new}}" alt="{{qrcode_url}}" style="margin:10%"/>
+          </div>
+        </div>      
+      </li>
+    </ul>
+  </div>
+  <br>
+</div>
+{% endblock %} 

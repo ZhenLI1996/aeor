@@ -1,0 +1,30 @@
+{% extends "frameworks/bs4.html" %}
+
+{% load staticfiles %}
+
+{% block my_css %}
+div.card{
+  box-shadow: 0px 0px 5px #888888;
+}
+img.headimg{
+  border-radius: 50%;
+  border: 10px solid #f5f5f5;
+  box-sizing: border-box;
+  margin:5%;
+}
+.cardtext{
+  text-align: center;
+  color: #353535;
+}
+.bottomtext{
+  color: #FFFFFF;
+}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+<img src="{% static "word_card/21.png" %}" alt="21.png"/><p>card 1</p>
+<a href="{{sign_link}}"><button type="button" class="btn btn-primary">打卡</button></a>
+<br />
+</div>
+{% endblock %} 
